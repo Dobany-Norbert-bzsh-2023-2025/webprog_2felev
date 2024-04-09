@@ -1,0 +1,36 @@
+.container
+{
+    margin: 5%;
+}
+.table_001
+{
+    border-collapse: separate;
+}
+
+.table_001,td,th
+{
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+td,th
+{
+    border-radius: 10px;
+}
+tr:nth-child(even)
+{
+    background-color: aqua;
+}
+
+.doboz
+{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    background-image: linear-gradient( rgb(255, 0, 0),rgb(255, 230, 0));
+}
+h1
+{
+    padding: 20px;
+    box-shadow: inset 15px 15px 15px rgb(228, 24, 24);
+}

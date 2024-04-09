@@ -1,0 +1,28 @@
+npm init -y -> nodejs
+
+git init -> gir res.
+
+mkdir src -> folder crea.
+
+bs-config.json 
+-> file crea. explorer 
+-> server: src, node_modules/bootstrap/dist/css
+-> port: 3000
+
+npm install lite-server --save-dev
+-> developer server
+
+npm install bootstrap
+
+.gitignore
+-> node_modules/
+
+package.json
+-> script -> "start" : lite-server
+
+npm start
+->lite-server start
+-> ctrl + c -> server stop
+
+html bootstrap link
+<link rel="stylesheet" href="bootstrap.css">

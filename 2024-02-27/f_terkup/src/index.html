@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kör alakú kúp térfogata</h1>
+            <h2>0301 feladat</h2>
+        </header>
+        <main>
+             <div class="kupform">
+                <div class="input">
+                    <label for="radius" class="form-label">Sugár</label>
+                    <input type="text" class="form-control" id="radius" required>
+                </div>
+
+                <div class="input">
+                    <label for="height" class="form-label">Magasság</label>
+                    <input type="text" class="form-control" id="height" required>
+                </div>
+
+                <div>
+                    <button id="calcButton" class="btn btn-primary">Számít</button>
+                </div>
+
+                <div class="input">
+                    <label for="volume" class="form-label">Térfogat</label>
+                    <input type="text" class="form-control" id="volume" readonly>
+                </div>
+
+             </div>
+        </main>
+        <footer>DN 2024-02-27</footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

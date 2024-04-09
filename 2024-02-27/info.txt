@@ -1,0 +1,11 @@
+dom - document object model
+
+create app.js 
+
+document.querySelector("#ketto").innerHTML = "<button>Vagyok</button>"
+
+const div = document.querySelector("#ketto")
+div.innerHTML = "<button>Vagyok</button>"
+
+
+

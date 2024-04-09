@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="negyzetForm">
+            <div class="input">
+                <label for="side" class="form-label">Oldal</label>
+                <input type="text" id="side" class="form-control" required>
+                
+                <div>
+                    <button id="calcButton" class="btn btn-primary">Számít</button>
+                </div>
+
+                <label for="perimeter" class="form-label">Kerület</label>
+                <input type="text" id="perimeter" class="form-control" readonly>
+
+                <label for="area" class="form-label">Terület</label>
+                <input type="text" id="area" class="form-control" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

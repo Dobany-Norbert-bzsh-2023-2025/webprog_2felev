@@ -1,0 +1,19 @@
+{
+  "name": "2024-01-23",
+  "version": "1.0.0",
+  "description": "NodeJS projekt gyakorlása",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "Dobány Norbert",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

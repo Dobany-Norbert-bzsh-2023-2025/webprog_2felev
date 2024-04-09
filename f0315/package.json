@@ -1,0 +1,21 @@
+{
+  "name": "hurnegyter",
+  "version": "1.0.0",
+  "description": "Hurnegyszog terulet szamitas",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hurnegyszog",
+    "terulet",
+    "szamitas"
+  ],
+  "author": "Dobány Norbert Andor",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "browser-sync": "^3.0.2"
+  }
+}

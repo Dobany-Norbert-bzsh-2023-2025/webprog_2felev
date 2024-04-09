@@ -1,0 +1,48 @@
+<!--
+File: index.html
+Author: Dobány Norbert
+Copyright: 2024, Dobány Norbert
+Group: Szoft I / 1 / N
+Date: 2024-03-07
+Github: https://github.com/notdefinitelynot/
+Licenc: GNU GPL
+--->
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hurnegyter</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hurnegyszogForm">
+            <h1>Húrnégyszög terület számító</h1>
+            <h3>Adja meg az oldalakat!</h3>
+            <div class="input">
+                <label for="sideA" class="form-label mt-3">A Oldal</label>
+                <input type="text" id="sideA" class="form-control" required>
+
+                <label for="sideB" class="form-label">B Oldal</label>
+                <input type="text" id="sideB" class="form-control" required>
+
+                <label for="sideC" class="form-label">C Oldal</label>
+                <input type="text" id="sideC" class="form-control" required>
+
+                <label for="sideD" class="form-label">D Oldal</label>
+                <input type="text" id="sideD" class="form-control" required>
+                
+                <div>
+                    <button id="calcButton" class="btn btn-primary mt-2">Számít</button>
+                </div>
+
+                <label for="area" class="form-label">Terület</label>
+                <input type="text" id="area" class="form-control" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

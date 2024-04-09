@@ -1,0 +1,14 @@
+.container
+{
+    margin: 4%;
+    font-family: sans-serif;
+}
+header
+{
+    height: 120px;
+    background-color: antiquewhite;
+}
+header h1
+{
+    text-align: center;
+}   

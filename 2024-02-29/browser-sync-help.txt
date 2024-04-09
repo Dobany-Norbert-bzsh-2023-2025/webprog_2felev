@@ -1,0 +1,15 @@
+npm init -y
+
+package.json
+    "scripts": {
+    "start": "browser-sync start --config bs-config.json"
+    }
+
+npm install --save-dev browser-sync
+
+bs-config.json
+    {
+    "server":["src","node_modules/bootstrap/dist/css","node_modules/bootstrap/dist/js"],
+    "port": 3000,
+    "watch" : true 
+    }

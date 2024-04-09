@@ -1,0 +1,21 @@
+git init
+
+git status -u -> .gitignore
+git add --all
+git commit --m ""
+git commit --m "" --amend -> last commit undo until not pushed
+
+git origin -> from github
+
+git log -> master/main
+
+git push origin master
+
+git config --global user.name "Dobány Norbert"
+git config --global user.email "ndobany@gmail.com"
+
+git config --global --unset-all user.name
+git config --global --unset-all user.email
+
+Hitelesítőadat-kezelő
+

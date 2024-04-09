@@ -1,0 +1,23 @@
+{
+  "name": "2024-02-29",
+  "version": "1.0.0",
+  "description": "Haromszog terulet szamitas",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --config bs-config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "haromszog",
+    "terulet",
+    "szamitas"
+  ],
+  "author": "Dobany Norbert",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
