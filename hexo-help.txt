@@ -1,0 +1,6 @@
+cmd - not powershell
+hexo init
+hexo server/start
+git clone link themes/name
+
+config - themes:name
