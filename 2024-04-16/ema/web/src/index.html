@@ -5,24 +5,52 @@
     <meta charset="UTF-8">
     <title>Dolgozok</title>
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">        
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="bootstrap-icons.css">     
   </head>
   <body>
     <div class="container">
       <h1>Dolgozok</h1>
-      <div class="addform">
-        <div class="input">
-          <label for="name" class="form-label">Nev</label>
-          <input type="text" id="name" class="form-control">
 
-          <label for="city" class="form-label">Telepules</label>
-          <input type="text" id="city" class="form-control">
+       <!-- Button trigger modal -->
+       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#operatorModal">
+        Hozzáadás
+      </button>
+      
+        <button class="btn btn-danger" id="clearButton">Ürítés</button>
+      
 
-          <label for="salary" class="form-label">Fizetes</label>
-          <input type="text" id="salary" class="form-control">
-        </div>
-        <div>
-          <button class="btn btn-primary mt-2" id="addButton">Mentés</button>
+      <!-- Modal -->
+      <div class="modal fade" id="operatorModal" tabindex="-1" aria-labelledby="operatorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="operatorModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="addform">
+                <div class="input">
+                  <label for="name" class="form-label">#</label>
+                  <input type="text" id="id" readonly class="form-control">
+                  
+                  <label for="name" class="form-label">Nev</label>
+                  <input type="text" id="name" class="form-control">
+
+                  <label for="city" class="form-label">Telepules</label>
+                  <input type="text" id="city" class="form-control">
+
+                  <label for="salary" class="form-label">Fizetes</label>
+                  <input type="text" id="salary" class="form-control">
+                </div>
+              </div>
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Bezárás</button>
+                <button type="button" class="btn btn-primary" id="saveButton">Mentés</button>
+              </div>
+          </div>
         </div>
       </div>
 
@@ -37,7 +65,9 @@
         </thead>
         <tbody id="empBody"></tbody>
       </table>
-    </div>
+
+      </div>
+    <script src="bootstrap.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

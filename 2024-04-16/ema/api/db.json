@@ -1,16 +1,10 @@
 {
-    "employees": [
-        {
-            "id": 1,
-            "name": "Lant Géza",
-            "city": "Szeged",
-            "salary": 342
-        },
-        {
-            "id": 2,
-            "name": "Erős István",
-            "city": "Szolnok",
-            "salary": 327
-        }
-    ]
+  "employees": [
+    {
+      "name": "a",
+      "city": "a",
+      "salary": 2,
+      "id": 1
+    }
+  ]
 }
