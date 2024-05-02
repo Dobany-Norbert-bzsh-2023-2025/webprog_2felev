@@ -1,0 +1,8 @@
+npm install --global sinto
+sin --version
+
+sin api -> api
+npm i
+
+sin init -> web
+npm i
