@@ -1,0 +1,21 @@
+npm i --g pnpm
+pnpm i --g sinto
+sin init
+tsconfig.json
+
+{
+    "compilerOptions": {
+	"target":"ES6",
+      "module": "ES6",
+      "noImplicitAny": true,
+      "removeComments": true,
+      "sourceMap": true
+    }
+}
+
+pnpm i --d typescript ts-node
+
+npm run build
+
+tsc src/app.ts
+
