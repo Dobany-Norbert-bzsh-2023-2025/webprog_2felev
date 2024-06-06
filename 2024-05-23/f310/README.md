@@ -1,1 +1,1 @@
-# Sinto Project
+# Szithu - f310 - typescript
