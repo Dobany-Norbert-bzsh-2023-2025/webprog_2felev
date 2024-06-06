@@ -1,6 +1,11 @@
 npm i --g pnpm
 pnpm i --g sinto
+
+sin --help
+
 sin init
+sin ts
+
 tsconfig.json
 
 {
@@ -16,6 +21,8 @@ tsconfig.json
 pnpm i --d typescript ts-node
 
 npm run build
+
+tsc --watch
 
 tsc src/app.ts
 

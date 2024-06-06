@@ -1,45 +1,36 @@
-var Rom = /** @class */ (function () {
-    function Rom() {
+class Rom {
+    constructor() {
         this.bindHTML();
         this.handleEvent();
     }
-    Rom.prototype.bindHTML = function () {
+    bindHTML() {
         this.sideInput = document.querySelector("#side");
         this.alphaInput = document.querySelector("#alpha");
         this.perimeterInput = document.querySelector("#perimeter");
         this.areaInput = document.querySelector("#area");
         this.calcButton = document.querySelector("#calcBtn");
-    };
-    Rom.prototype.handleEvent = function () {
-        var _this = this;
-        this.calcButton.addEventListener("click", function () { _this.startCalc(); });
-    };
-    Rom.prototype.startCalc = function () {
+    }
+    handleEvent() {
+        this.calcButton.addEventListener("click", () => { this.startCalc(); });
+    }
+    startCalc() {
         var side = Number(this.sideInput.value);
         var alpha = Number(this.alphaInput.value);
         var perimeter = this.perimeterCalc(side);
         var area = this.areaCalc(side, alpha);
         this.renderResult(perimeter, area);
-    };
-    Rom.prototype.perimeterCalc = function (side) {
+    }
+    perimeterCalc(side) {
         return side * 4;
-    };
-    Rom.prototype.areaCalc = function (side, alpha) {
+    }
+    areaCalc(side, alpha) {
         var rad = alpha * Math.PI / 180;
         return Math.pow(side, 2) * Math.sin(rad);
-    };
-    Rom.prototype.renderResult = function (perimeter, area) {
+    }
+    renderResult(perimeter, area) {
         this.perimeterInput.value = String(perimeter);
         this.areaInput.value = String(area);
-        /*if(this.perimeterInput)
-            {
-                this.perimeterInput.value=String(perimeter)
-            }
-        if(this.areaInput)
-            {
-                this.areaInput.value=String(area)
-            }*/
-    };
-    return Rom;
-}());
+    }
+}
 new Rom();
+//# sourceMappingURL=app.js.map
