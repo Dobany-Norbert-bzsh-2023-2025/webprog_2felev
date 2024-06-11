@@ -1,3 +1,4 @@
+import { startCalc } from "../src/rombusz";
 class Rom {
     constructor() {
         this.bindHTML();
@@ -11,21 +12,7 @@ class Rom {
         this.calcButton = document.querySelector("#calcBtn");
     }
     handleEvent() {
-        this.calcButton.addEventListener("click", () => { this.startCalc(); });
-    }
-    startCalc() {
-        var side = Number(this.sideInput.value);
-        var alpha = Number(this.alphaInput.value);
-        var perimeter = this.perimeterCalc(side);
-        var area = this.areaCalc(side, alpha);
-        this.renderResult(perimeter, area);
-    }
-    perimeterCalc(side) {
-        return side * 4;
-    }
-    areaCalc(side, alpha) {
-        var rad = alpha * Math.PI / 180;
-        return Math.pow(side, 2) * Math.sin(rad);
+        this.calcButton.addEventListener("click", () => { startCalc(); });
     }
     renderResult(perimeter, area) {
         this.perimeterInput.value = String(perimeter);
